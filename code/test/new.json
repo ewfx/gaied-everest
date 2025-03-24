@@ -1,0 +1,209 @@
+{
+  "messageId": "MSG123456789",
+  "timestamp": "2024-01-03T15:30:00Z",
+  "version": "2.0",
+  "source": "web-portal",
+  "environment": "production",
+  "requestType": "CRUD",
+  "correlationId": "CORR-987654321",
+  "eventType": "DATA_UPDATE",
+  "priority": "HIGH",
+  "metadata": {
+    "apiVersion": "v3",
+    "client": "web-browser",
+    "userAgent": "Mozilla/5.0"
+  },
+  "company": {
+    "name": "TechCorp Global",
+    "foundedYear": 1995,
+    "registrationDetails": {
+      "number": "TC123456",
+      "locations": [
+        {
+          "country": "USA",
+          "offices": [
+            {
+              "city": "San Francisco",
+              "employeeCount": 500,
+              "facilities": [
+                {
+                  "name": "Main Campus",
+                  "buildings": [
+                    {
+                      "id": "B1",
+                      "floors": 10,
+                      "departments": [
+                        {
+                          "name": "Engineering",
+                          "teams": [
+                            {
+                              "name": "Frontend",
+                              "members": [
+                                {
+                                  "id": "EMP001",
+                                  "name": "John Doe",
+                                  "skills": [
+                                    {
+                                      "name": "React",
+                                      "level": "Expert",
+                                      "certifications": [
+                                        {
+                                          "name": "Advanced React",
+                                          "issuedDate": "2023-01-15",
+                                          "validUntil": "2025-01-15",
+                                          "modules": [
+                                            {
+                                              "name": "State Management",
+                                              "score": 95,
+                                              "projects": [
+                                                {
+                                                  "name": "E-commerce Platform",
+                                                  "technologies": ["Redux", "GraphQL"]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "projects": [
+                                    {
+                                      "name": "Dashboard Redesign",
+                                      "status": "In Progress",
+                                      "tasks": [
+                                        {
+                                          "id": "T1",
+                                          "description": "UI Implementation",
+                                          "subtasks": [
+                                            {
+                                              "name": "Component Design",
+                                              "status": "Completed",
+                                              "reviews": [
+                                                {
+                                                  "reviewer": "Jane Smith",
+                                                  "comments": [
+                                                    {
+                                                      "text": "Great work!",
+                                                      "timestamp": "2024-01-02T10:30:00Z",
+                                                      "attachments": [
+                                                        {
+                                                          "type": "screenshot",
+                                                          "url": "http://example.com/screenshot1.png"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "amenities": [
+                    {
+                      "type": "Cafeteria",
+                      "capacity": 200,
+                      "vendors": [
+                        {
+                          "name": "Healthy Bites",
+                          "menu": [
+                            {
+                              "category": "Main Course",
+                              "items": [
+                                {
+                                  "name": "Grilled Salmon",
+                                  "price": 15.99,
+                                  "ingredients": [
+                                    {
+                                      "name": "Atlantic Salmon",
+                                      "source": "Norway",
+                                      "nutritionalInfo": {
+                                        "calories": 350,
+                                        "protein": 30,
+                                        "allergens": ["fish"]
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "departments": [
+      {
+        "name": "Research & Development",
+        "budget": {
+          "yearly": 1000000,
+          "allocations": [
+            {
+              "quarter": "Q1",
+              "amount": 250000,
+              "projects": [
+                {
+                  "name": "AI Innovation",
+                  "team": {
+                    "lead": "Dr. Sarah Johnson",
+                    "members": [
+                      {
+                        "name": "Mike Wilson",
+                        "role": "ML Engineer",
+                        "publications": [
+                          {
+                            "title": "Deep Learning Applications",
+                            "year": 2023,
+                            "coAuthors": [
+                              {
+                                "name": "Dr. Emily Brown",
+                                "institution": "Tech University",
+                                "contributions": [
+                                  {
+                                    "type": "Research",
+                                    "details": "Algorithm Design",
+                                    "hours": 120
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "status": "SUCCESS",
+  "processingTime": 150,
+  "traceId": "TRACE-456789",
+  "securityContext": {
+    "authType": "OAuth2",
+    "tokenExpiry": "2024-01-04T15:30:00Z"
+  },
+  "debug": false
+}
