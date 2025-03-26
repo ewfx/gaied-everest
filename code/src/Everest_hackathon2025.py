@@ -13,9 +13,9 @@ from datetime import datetime
 
 # ----------- CONFIG -----------
 IMAP_SERVER = "imap.gmail.com"
-EMAIL_ACCOUNT = "xxx"
-EMAIL_PASSWORD = "xxx"
-OPENAI_API_KEY = "xxx"
+EMAIL_ACCOUNT = "xxxx@gmail.com"
+EMAIL_PASSWORD = "xxxxxx"
+OPENAI_API_KEY = "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"
 
 openai.api_key = OPENAI_API_KEY
 
@@ -147,7 +147,14 @@ def classify_with_llm(email_obj, attachment_text):
 
     print(response.choices[0].message.content)
 
-emails = fetch_emails()
-for email_obj in emails:
+
+# ----------- MAIN -----------
+if __name__ == "__main__":
+    emails = fetch_emails()
+    for email_obj in emails:
+        attachment_text = process_attachments(email_obj["attachments"])
+        classify_with_llm(email_obj, attachment_text)
+#emails = fetch_emails()
+#for email_obj in emails:
         attachment_text = process_attachments(email_obj["attachments"])
         classify_with_llm(email_obj, attachment_text)
